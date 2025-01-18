@@ -1,0 +1,21 @@
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Department</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.status }}</td>
+          <td>{{ employee.department }}</td>
+          <td>{{ employee.location }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,26 @@
+<button class="Side" (click)="toggleSidebar()">☰</button>
+
+<div class="sidebar" [ngClass]="{'show': isSidebarVisible}" id="sidebar">
+    <div class="logo">
+        <img src="logohau.jpg" alt="Logo">
+    </div>
+    <h2>Dashboard</h2>
+    <a routerLink="/home">Home</a>
+    <a routerLink="/onboarding">Onboarding</a>
+    <a routerLink="/offboarding">Offboarding</a>
+    <a routerLink="/employee">Employee Information</a>
+    
+    <div class="dropdown">
+        <a href="#">Dashboard</a>
+        <div class="dropdown-content">
+            <a routerLink="/onboarding-analytics">Onboarding Analytics</a>
+            <a routerLink="/offboarding-analytics">Offboarding Analytics</a>
+            <a routerLink="/distribution">Employee Distribution</a>
+            <a routerLink="/recommend">Recommendatory</a>
+            <a routerLink="/evaluation">Evaluation</a>
+            <a routerLink="/onboarding-report">Onboarding Report</a>
+            <a routerLink="/offboarding-report">Offboarding Report</a>
+            <a routerLink="/audit-report">Audit Logs Report</a>
+        </div>
+    </div>
+</div>
